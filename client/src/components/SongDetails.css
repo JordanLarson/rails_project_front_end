@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+p {
+  font-family: "Roboto Mono", monospace;
+}
+.artist {
+  padding-left: 400px;
+  margin-bottom: 20px;
+}
+.title {
+  color: #718e9a;
+}
+.favButton {
+  background-color: #a93e55;
+  border-color: #a93e55;
+  color: white;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 40px 40px #a93e55 inset, 0 0 0 0 #a93e55;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.deleteButton {
+  background-color: #a93e55;
+  border-color: #a93e55;
+  color: white;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 40px 40px #a93e55 inset, 0 0 0 0 #a93e55;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.heart {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #a93e55;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #a93e55;
+}
+.heart:before {
+  bottom: 0px;
+  left: -10px;
+}
+.heart:after {
+  top: -10px;
+  right: 0px;
+}
+.deleteButton:hover {
+  box-shadow: 0 0 10px 0 #a93e55 inset, 0 0 10px 4px #a93e55;
+}
+.favButton:hover {
+  box-shadow: 0 0 10px 0 #a93e55 inset, 0 0 10px 4px #a93e55;
+}
