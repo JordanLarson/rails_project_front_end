@@ -18,14 +18,14 @@ const Playlist = (props) => {
       }
     };
     makeAPICall();
-  }, []);
+  }, [list]);
 
   // console.log(list);
 
   const songsArr = list.map((song) => (
     <SongDetails
-      key={song._id}
-      id={song._id}
+      key={song.id}
+      id={song.id}
       title={song.title}
       artist={song.artist}
       time={song.time}

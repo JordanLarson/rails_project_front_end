@@ -3,6 +3,7 @@ import axios from "axios";
 import "./SongDetails.css";
 
 const SongDetails = ({ title, artist, time, id, handleSubmit }) => {
+  console.log(id);
   const [isDeleted, setIsDeleted] = useState(false);
 
   const deleteSong = async () => {
